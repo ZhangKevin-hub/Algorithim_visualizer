@@ -1,6 +1,6 @@
 # Algorithim_visualizer
 
-#Overview
+# Overview
 This project is a Java-based visual path finder algorithm that uses the A* search algorithm to find the shortest path between two points on a map. It includes a graphical interface that displays the resulting path on the map.
 
 # Problem Solved
@@ -46,6 +46,9 @@ This project has the following dependencies:
 Java Swing library for the graphical user interface
 
 # Credits and References
+
 A* search algorithm: https://en.wikipedia.org/wiki/A*_search_algorithm
+
 Dijkstra's algorithm: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
+
 Best-first search: https://en.wikipedia.org/wiki/Best-first_search
