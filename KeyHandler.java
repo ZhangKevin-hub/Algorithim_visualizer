@@ -14,7 +14,12 @@ public class KeyHandler implements KeyListener{
     public void keyPressed(KeyEvent e) {
         int code = e.getKeyCode();
         if(code == KeyEvent.VK_ESCAPE){
-           dp.autosearch();
+           try {
+            dp.autosearch();
+        } catch (InterruptedException e1) {
+            // TODO Auto-generated catch block
+            e1.printStackTrace();
+        }
         }
         
     }

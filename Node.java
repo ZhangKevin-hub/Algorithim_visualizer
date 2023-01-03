@@ -1,6 +1,4 @@
 import java.awt.Color;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 
@@ -41,6 +39,7 @@ public class Node extends JButton{
     public void setAsSolidNode(){
         setBackground(Color.black);
         setForeground(Color.white);
+        setText("<html>Solid<br>Wall<html>");
         solid = true;
     }
     public void setAsOpenNode(){
@@ -50,11 +49,13 @@ public class Node extends JButton{
         if(start == false && goal == false){
             setBackground(Color.orange);
             setForeground(Color.black);
+            setText("<html>Potential<br>Path</html>");
         }
         checked = true;
     }
     public void setAsPathNode(){
         setBackground(Color.gray);
         setForeground(Color.black);
+        setText("<html> Path <br>to <br>Goal</html>");
     }
 }

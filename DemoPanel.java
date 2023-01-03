@@ -2,7 +2,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.GridLayout;
 import java.util.ArrayList;
-
+import java.util.concurrent.TimeUnit;
 import javax.swing.JPanel;
 
 public class DemoPanel extends JPanel {
@@ -10,7 +10,7 @@ public class DemoPanel extends JPanel {
     //SCREEN SETTINGS
     final int maxCol = 15;
     final int maxRow = 10;
-    final int nodeSize = 80;
+    final int nodeSize = 100; //pixel
     final int screenWidth = nodeSize * maxCol;
     final int screenHeight = nodeSize * maxRow;
 
@@ -105,8 +105,9 @@ public class DemoPanel extends JPanel {
             node.setText("<html>F:" + node.fCost + "<br> G:" + node.gCost + "<br> H:" + node.hCost+"</html");
         }
     }
-    public void autosearch(){
+    public void autosearch() throws InterruptedException{
         while(goalReached == false && step < 400){
+            TimeUnit.MINUTES.sleep(10);
             int col = currentNode.col;
             int row = currentNode.row;
 
