@@ -17,8 +17,11 @@ To install and run this project, you will need to have the following software in
 Java 8 or higher
 A Java Integrated Development Environment (IDE) such as Eclipse or IntelliJ IDEA
 Clone the repository to your local machine:
+
 Copy code
+
 git clone : https://github.com/ZhangKevin-hub/Algorithim_visualizer.git
+
 Open the project in your IDE.
 
 Run the Main.java file to launch the application.
