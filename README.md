@@ -29,9 +29,7 @@ Run the Main.java file to launch the application.
 # Usage
 To use the path finder, follow these steps:
 
-Click on the map to select a start point.
-
-Click on the map again to select an end point.
+Press Escape to begin process.
 
 The shortest path between the two points will be displayed on the map.
 
@@ -52,3 +50,6 @@ A* search algorithm: https://en.wikipedia.org/wiki/A*_search_algorithm
 Dijkstra's algorithm: https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm
 
 Best-first search: https://en.wikipedia.org/wiki/Best-first_search
+
+# TODO:
+Allow users to customize the start and goal points with custom input on a JPanel and customize walls.
