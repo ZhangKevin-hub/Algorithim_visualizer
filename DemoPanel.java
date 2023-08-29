@@ -106,8 +106,7 @@ public class DemoPanel extends JPanel {
         }
     }
     public void autosearch() throws InterruptedException{
-        while(goalReached == false && step < 400){
-            TimeUnit.MINUTES.sleep(10);
+        if(goalReached == false && step < 400){
             int col = currentNode.col;
             int row = currentNode.row;
 

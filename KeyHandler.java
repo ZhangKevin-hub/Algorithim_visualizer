@@ -13,7 +13,7 @@ public class KeyHandler implements KeyListener{
     @Override
     public void keyPressed(KeyEvent e) {
         int code = e.getKeyCode();
-        if(code == KeyEvent.VK_ESCAPE){
+        if(code == KeyEvent.VK_ENTER){
            try {
             dp.autosearch();
         } catch (InterruptedException e1) {
